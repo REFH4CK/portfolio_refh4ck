@@ -58,4 +58,7 @@
     align-items: center;
     flex-direction: column;
   }
+  .socialsList {
+    gap: 1.25rem;
+  }
 }

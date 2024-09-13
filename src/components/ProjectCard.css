@@ -1,3 +1,10 @@
+.projects {
+  display: flex;
+  width: 60%;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
 .projectCard {
   width: 30rem;
   height: 25rem;
@@ -7,7 +14,7 @@
   box-shadow: 0px 6px 1px #1e557563;
 }
 
-.projectInfo a {
+.projectName {
   font-size: 1.25rem;
   font-weight: bold;
   color: #fff;
@@ -16,7 +23,7 @@
   transition: color .10s ease-in-out;
 }
 
-.projectInfo a:hover {
+.projectName:hover {
   color: #4c89ce;
 }
 
@@ -34,13 +41,6 @@
 .projectPreview img {
   width: 100%;
   height: 100%;
-  image-rendering: optimizeSpeed;
-  object-fit: cover;
-  transition: transform .25s ease-in-out;
-}
-
-.projectPreview img:hover{
-  transform: scale(1.05);
 }
 
 .projectInfo {
@@ -62,4 +62,56 @@
   padding: .35rem;
   border-radius: .25rem;
   background: #6e9bce42;
+}
+
+
+@media (width <= 999px) {
+  .projects {
+    width: 100%;
+  }
+  .projectCard {
+    width: 100%;
+    height: 24rem;
+    margin-bottom: 2rem;
+  }
+  .projectName {
+    font-size: 1rem;
+  }
+  .projectDescription {
+    font-size: .95rem;
+    padding-left: .5rem;
+  }
+  .projectPreview {
+    height: 13rem;
+  }
+  .techs {
+    font-size: 1.2rem;
+  }
+}
+
+
+@media (width >= 500px) {
+  .projects {
+    width: 100%;
+    justify-content: center;
+    gap: 2rem;
+  }
+  .projectCard {
+    width: 30rem;
+    height: 24rem;
+    margin-bottom: 2rem;
+  }
+  .projectName {
+    font-size: 1rem;
+  }
+  .projectDescription {
+    font-size: .95rem;
+    padding-left: .5rem;
+  }
+  .projectPreview {
+    height: 13rem;
+  }
+  .techs {
+    font-size: 1.2rem;
+  }
 }

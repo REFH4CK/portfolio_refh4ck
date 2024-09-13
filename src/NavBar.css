@@ -1,0 +1,46 @@
+.navbar {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  height: 6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #ffffff09;
+  backdrop-filter: blur(1rem);
+}
+
+.navbar-opt-list {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+}
+
+.navbar-opt-list-item {
+  font-family: 'Nunito', sans-serif;
+  cursor: default;
+  user-select: none;
+  background: #334965;
+  padding: .5rem;
+  border-radius: .2rem;
+  width: 8rem;
+  text-align: center;
+}
+
+.navbar-opt-list-item a {
+  color: #ddd;
+}
+
+@media (width <= 999px) {
+  .navbar {
+    width: 100%;
+    height: 5rem;
+  }
+  .navbar-opt-list {
+    gap: .5rem;
+  }
+  .navbar-opt-list-item {
+    width: 6rem;
+    font-size: .85rem;
+  }
+}

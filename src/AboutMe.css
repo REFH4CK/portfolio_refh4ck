@@ -1,0 +1,58 @@
+.container-info {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding-top: 4rem;
+}
+
+.aboutMe {
+  display: inherit;
+  justify-content: center;
+  width: 60%;
+  gap: 3rem;
+  padding: 4.5rem 3.5rem;
+}
+
+.container-profilePhoto {
+  width: 16rem;
+  height: 16rem;
+  object-fit: cover;
+  box-shadow: 3px 6px 1px #549fca63;
+  border-radius: 1rem;
+}
+
+.container-aboutMe-info {
+  font-size: 1.6rem;
+  font-family: 'Nunito', sans-serif;
+}
+
+.aboutMe-name {
+  color: rgb(136, 152, 245);
+}
+
+.aboutMe {
+  background: #2f628063;
+  border-radius: 2rem;
+}
+
+@media (width <= 999px) {
+  .container-info {
+    padding-top: 4rem;
+  }
+  .aboutMe {
+    align-items: center;
+    flex-direction: column;
+    width: 95%;
+    padding: 2.5rem 1.5rem;
+  }
+  .container-profilePhoto {
+    width: 16rem;
+    height: 18rem;
+  }
+  .container-aboutMe-info {
+    font-size: 1.4rem;
+  }
+  .aboutMe-name {
+    font-size: 1.6rem;
+  }
+}

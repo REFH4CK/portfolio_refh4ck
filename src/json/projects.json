@@ -2,7 +2,7 @@
   {
     "name": "Bitmates Info - Wiki",
     "description": "Incredible wiki with tools for help Bitmates Community beginners and veteran playes",
-    "technologies": ["react", "css3"],
+    "technologies": ["react", "nodejs", "css3"],
     "presentation_image": "bitmates",
     "url": "https://bitmates-info.vercel.app/"
   },
