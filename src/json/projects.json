@@ -1,0 +1,16 @@
+[
+  {
+    "name": "Bitmates Info - Wiki",
+    "description": "Incredible wiki with tools for help Bitmates Community beginners and veteran playes",
+    "technologies": ["react", "css3"],
+    "presentation_image": "bitmates",
+    "url": "https://bitmates-info.vercel.app/"
+  },
+  {
+    "name": "Pixels - Land Tracker",
+    "description": "It is a self-help tool for free land tracking in the NFT Pixels Online game.",
+    "technologies": ["html5", "css3", "javascript"],
+    "presentation_image": "tracker",
+    "url": "https://refh4ck.github.io/pixels_land_tracker/"
+  }
+]

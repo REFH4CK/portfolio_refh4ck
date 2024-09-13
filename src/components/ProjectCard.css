@@ -1,0 +1,65 @@
+.projectCard {
+  width: 30rem;
+  height: 25rem;
+  background: #4d476d3a;
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: 0px 6px 1px #1e557563;
+}
+
+.projectInfo a {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #fff;
+  text-decoration: underline;
+  cursor: pointer;
+  transition: color .10s ease-in-out;
+}
+
+.projectInfo a:hover {
+  color: #4c89ce;
+}
+
+.projectDescription {
+  font-size: 1rem;
+  width: 80%;
+  padding-left: .8rem;
+}
+
+.projectPreview {
+  height: 15rem;
+  overflow: hidden;
+}
+
+.projectPreview img {
+  width: 100%;
+  height: 100%;
+  image-rendering: optimizeSpeed;
+  object-fit: cover;
+  transition: transform .25s ease-in-out;
+}
+
+.projectPreview img:hover{
+  transform: scale(1.05);
+}
+
+.projectInfo {
+  padding: 1rem;
+}
+
+.overview {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.techs {
+  display: inherit;
+  align-items: center;
+  gap: 1rem;
+  font-size: 1.4rem;
+  padding: .35rem;
+  border-radius: .25rem;
+  background: #6e9bce42;
+}

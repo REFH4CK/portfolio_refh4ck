@@ -1,0 +1,17 @@
+.container-projects {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+@media (width <= 900px) {
+  .container-projects {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding: 2rem;
+  }
+}
