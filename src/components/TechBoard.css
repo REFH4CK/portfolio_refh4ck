@@ -58,7 +58,7 @@
 
 @media (width <= 999px) {
   .container-technologies {
-    padding: 5rem 0;
+    padding: 3rem 0;
   }
   .container-board {
     width: 100%;
@@ -69,7 +69,7 @@
     grid-template-columns: repeat(4, clamp(4rem, 10vw + 1rem, 15rem));
   }
   .container-board-title {
-    font-size: 1.7rem;
+    font-size: 2.5rem;
     height: fit-content;
     margin-bottom: 0;
   }
@@ -86,10 +86,30 @@
   }
 }
 
+@media (width <= 500px) {
+  .container-board-title {
+    width: 100%;
+    font-size: 1.8rem;
+    text-align: center;
+  }
+  .tech-name {
+    margin: 0.5rem 0;
+    font-size: .7rem;
+    padding: 0rem .25rem;
+  }
+}
+
 @media (width <= 375px) {
+  .container-technologies {
+    height: 34rem;
+    padding: 0rem;
+  }
+  .container-board-title {
+    margin-bottom: 4rem;
+  }
   .container-board-grid {
     grid-template-columns: repeat(auto-fit, clamp(4.5rem, 10vw + 1rem, 15rem));
-    grid-template-rows: repeat(auto-fit, 6rem);
+    grid-template-rows: repeat(auto-fit, 8rem);
     gap: 0.25rem;
   }
   .tech {
