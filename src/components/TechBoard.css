@@ -49,8 +49,11 @@
 .tech-name {
   margin: 0.5rem 0;
   font-family: "Nunito", sans-serif;
-  color: rgb(117, 143, 173);
+  color: rgb(151, 174, 199);
   font-weight: bold;
+  background: #32314e;
+  padding: 0rem .5rem;
+  border-radius: .2rem;
 }
 
 @media (width <= 999px) {
