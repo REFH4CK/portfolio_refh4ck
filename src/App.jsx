@@ -19,6 +19,7 @@ function App() {
           <TechBoard />
         </section>            
         <section className="container-projects" id="projects">
+          <h2 className='container-projects-title'>Featured projects</h2>
           <ProjectCard />
         </section>
       </main>
