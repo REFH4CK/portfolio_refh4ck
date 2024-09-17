@@ -12,18 +12,20 @@
   gap: .5rem;
   padding: 0.5rem;
   width: 100%;
-  background: #5f8b50;
+  background: #4e7242;
   border-radius: 0.2rem;
   text-align: center;
   width: 8rem;
-  color: #ddd;
+  color: #cffff3;
+  outline: 1px solid #d8e3e94b;
+  box-shadow: 3px 5px 0px #549fca63;
   transition: color .15s ease-in-out,
               background .15s ease-in-out;
 }
 
 .button:hover {
-  background: #c1a9f7;
-  color: #3c4553;
+  background: #45613c;
+  color: #cffff3;
 }
 
 .button ion-icon {
@@ -33,10 +35,10 @@
 @media (width <= 700px) {
   .optButtons {
     align-items: center;
-    flex-direction: column;
+    margin-bottom: 2rem;
   }
   .button {
     border-radius: 0.2rem;
-    width: 14rem;
+    width: 8rem;
   }
 }
