@@ -15,7 +15,7 @@ function AboutMe() {
           <div className="optButtons">
             <Button
               action="download"
-              url="/public/download/Andres Hernandez - CV.pdf"
+              url="/assets/Andres Hernandez - CV.pdf"
               text="CV"
             />
             <Button
