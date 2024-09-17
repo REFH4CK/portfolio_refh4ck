@@ -69,3 +69,22 @@
     font-size: 1.6rem;
   }
 }
+
+@media (width <= 480px) {
+  .aboutMe {
+    align-items: center;
+    flex-direction: column;
+    width: 95%;
+    padding: 2.5rem 1.5rem;
+  }
+  .container-profilePhoto {
+    width: 16rem;
+    height: 18rem;
+  }
+  .container-aboutMe-info {
+    font-size: 1.2rem;
+  }
+  .aboutMe-name {
+    font-size: 1.4rem;
+  }
+}
