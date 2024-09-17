@@ -4,6 +4,13 @@
   gap: 2rem;
 }
 
+.container-info {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  flex-direction: column;
+}
+
 .container-projects {
   display: flex;
   width: 100%;
@@ -27,5 +34,13 @@
     flex-wrap: wrap;
     gap: 2rem;
     padding: 0.5rem;
+  }
+}
+
+@media (width <= 500px) {
+  .container-projects-title {
+    width: 100%;
+    font-size: 1.8rem;
+    text-align: center;
   }
 }

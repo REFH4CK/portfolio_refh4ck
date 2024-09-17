@@ -4,6 +4,7 @@ import NavBar from "./NavBar";
 import AboutMe from "./AboutMe";
 import TechBoard from "./components/TechBoard";
 import ProjectCard from "./components/ProjectCard";
+import Button from "./components/Button";
 
 
 function App() {
@@ -14,6 +15,10 @@ function App() {
         <NavBar />
         <section className="container-info" id="about">
           <AboutMe />
+          <div className="optButtons">
+            <Button action='download' url='/src/assets/download/Andres Hernandez - CV.pdf' text='CV' />
+            <Button action='mail' url='mailto:andres29ehr@gmail.com' text='Mail' />
+          </div>
         </section>
         <section className="container-technologies" id="technologies">
           <TechBoard />
