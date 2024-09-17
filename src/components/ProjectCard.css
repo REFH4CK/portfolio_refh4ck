@@ -3,11 +3,12 @@
   width: 60%;
   justify-content: space-between;
   flex-wrap: wrap;
+  gap: 2rem;
 }
 
 .projectCard {
   width: 30rem;
-  height: 25rem;
+  height: 28rem;
   background: #4d476d3a;
   border-radius: 1rem;
   overflow: hidden;
@@ -68,10 +69,11 @@
 @media (width <= 999px) {
   .projects {
     width: 100%;
+    justify-content: center;
   }
   .projectCard {
-    width: 100%;
-    height: 24rem;
+    width: 30rem;
+    height: 25rem;
     margin-bottom: 2rem;
   }
   .projectName {
@@ -98,7 +100,7 @@
   }
   .projectCard {
     width: 30rem;
-    height: 24rem;
+    height: 29rem;
     margin-bottom: 2rem;
   }
   .projectName {
