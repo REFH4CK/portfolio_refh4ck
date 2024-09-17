@@ -25,7 +25,9 @@
   font-family: "Nunito", sans-serif;
   cursor: default;
   user-select: none;
-  background: #334965;
+  background: #132a46;
+  border: 1px solid #ffffff21;
+  box-shadow: 0 0 4px #ffffff25;
   border-radius: 0.2rem;
   width: 8rem;
   text-align: center;
