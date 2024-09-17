@@ -3,6 +3,8 @@ import PropTypes from 'prop-types';
 
 // eslint-disable-next-line react/prop-types
 function Button({ action, url, text }) {
+  const ionName = action === 'download' ? 'document-text' : 'mail';
+
   return (
     <>
       <a
@@ -10,7 +12,7 @@ function Button({ action, url, text }) {
         download={action === "download" ? "Andres Hernandez CV.pdf" : ""}
         className="button"
       >
-       <ion-icon name={`${action}-outline`}></ion-icon> {text}
+       <ion-icon name={`${ionName}-outline`}></ion-icon> {text}
       </a>
     </>
   );
