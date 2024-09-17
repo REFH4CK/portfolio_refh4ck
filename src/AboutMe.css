@@ -3,36 +3,90 @@
   justify-content: center;
   width: 100%;
   padding-top: 4rem;
+  font-family: 'Nunito', sans-serif;
 }
 
 .aboutMe {
   display: inherit;
   justify-content: center;
   width: 60%;
-  gap: 3rem;
-  padding: 4.5rem 3.5rem;
+  gap: 2rem;
+  padding: 2.5rem 3.5rem;
+}
+
+.photo-opts-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2.5rem;
+  align-items: center;
 }
 
 .container-profilePhoto {
+  margin: 0 auto;
   width: 16rem;
-  height: 16rem;
+  height: 19rem;
   object-fit: cover;
   box-shadow: 3px 6px 1px #549fca63;
   border-radius: 1rem;
 }
 
 .container-aboutMe-info {
-  font-size: 1.6rem;
-  font-family: 'Nunito', sans-serif;
+  font-size: 1rem;
+  color: #cfd2e4;
+  padding-left: 1.2rem;
+  margin-bottom: 1.2rem;
+}
+
+.container-aboutMe-exp ul {
+  margin-bottom: 1.2rem;
 }
 
 .aboutMe-name {
-  color: rgb(136, 152, 245);
+  font-size: 1.25rem;
+  color: #8898f5;
 }
 
 .aboutMe {
   background: #2f628063;
-  border-radius: 2rem;
+  border-radius: 1rem;
+}
+
+.aboutMe-title {
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+  background: #2691cf63;
+  width: fit-content;
+  padding: 0 1rem;
+  border-radius: .5rem;
+  margin: 0 0 1rem 0;
+}
+
+.company-name {
+  font-size: 1rem;
+  padding-left: 1rem;
+  font-weight: 600;
+}
+
+.date {
+  font-size: .75rem;
+  padding-left: 1rem;
+  color: #a8b5ffa8;
+  font-weight: bold;
+}
+
+.min-size {
+  color: #cfd2e4;
+  font-size: .95rem;
+}
+@media (width <= 1440px) {
+  .aboutMe {
+    width: 85%;
+  }
+  .photo-opts-container {
+    gap: 2rem;
+  }
 }
 
 @media (width <= 1070px) {
@@ -41,6 +95,9 @@
     flex-direction: column;
     width: 95%;
     padding: 2.5rem 1.5rem;
+  }
+  .photo-opts-container {
+    gap: 2rem;
   }
   .container-profilePhoto {
     width: 16rem;
@@ -51,6 +108,9 @@
 @media (width <= 999px) {
   .container-info {
     padding-top: 4rem;
+  }
+  .photo-opts-container {
+    gap: 2rem;
   }
   .aboutMe {
     align-items: center;
@@ -82,9 +142,12 @@
     height: 18rem;
   }
   .container-aboutMe-info {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
   }
   .aboutMe-name {
-    font-size: 1.4rem;
+    font-size: 1.3rem;
+  }
+  .min-size {
+    font-size: .95rem;
   }
 }
