@@ -31,6 +31,11 @@
   color: #ddd;
   padding: 0.5rem;
   width: 100%;
+  transition: color .15s ease-in-out;
+}
+
+.navbar-opt-list-item a:hover {
+  color: #90a3bd;
 }
 
 @media (width <= 999px) {
