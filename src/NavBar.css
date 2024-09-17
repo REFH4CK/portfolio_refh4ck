@@ -10,6 +10,10 @@
   backdrop-filter: blur(1rem);
 }
 
+[id] {
+  scroll-margin-top: 5.5em;
+} 
+
 .navbar-opt-list {
   display: flex;
   gap: 2rem;
