@@ -6,15 +6,21 @@ export default {
       backgroundImage: {
         "main-gradient": "linear-gradient(to top, #1a1733 0%, #211C45 25%, #211C45 85%, #1a1733 100%)",
         "overlay-1": "linear-gradient(to bottom, #160F2400 0%, #160F2460 34%, #160F2490 100%)",
-        // linear-gradient(to bottom, #160F2400 0%, #160F2450 45%, #160F2495 77%)
         "overlay-2": "linear-gradient(to bottom, #160F2410 50%, #160F24 95%)",
+        "mask": "url('assets/images/mask.webp'), linear-gradient(to top, #1a1733 0%, #211C45 25%, #211C45 85%, #1a1733 100%)",
+        "programmer": "url('assets/images/pc.gif')"
       },
       backgroundColor: {
         main: "#FFFFFF10",
         stack: "#BAB9C1",
         caret: "#A19FAD",
         "caret-arrow": "#06043D64",
-
+        skills: {
+          container: "#160F24",
+          outline: "#A89191",
+          "pills-container": "#322B4F",
+          pill: "#FFFFFF15",
+        },
       },
       fontFamily: {
         sans: ['"Inter"', "sans-serif"],
@@ -28,16 +34,12 @@ export default {
           text: "#FFFFFF70",
           icon: "#FFFFFF60",
         },
+        skillsOutline: "#A89191",
         main: {
           100: "#1a1733",
           200: "#211C45",
         },
-        skills: {
-          container: "#160F24",
-          outline: "#A89191",
-          "pills-container": "#322B4F",
-          pill: "#FFFFFF12",
-        },
+
       },
       screens: {
         // Breakpoints predeterminados de Tailwind

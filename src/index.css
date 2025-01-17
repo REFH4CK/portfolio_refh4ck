@@ -7,9 +7,13 @@
 @tailwind components;
 @tailwind utilities;
 
-
-html {
+main {
+  scrollbar-color: #0000007c #06043d7c;
+  scrollbar-width: thin;
+  overflow-y: scroll;
+  overflow-x: hidden;
   scroll-behavior: smooth;
+  scroll-padding-top: 1.25rem;
 }
 
 ion-icon {

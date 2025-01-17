@@ -6,10 +6,10 @@ import { LinkedIn } from "@/icons/LinkedIn";
 export function Header() {
   return (
     <>
-      <header className="fixed top-0 w-full flex justify-center pt-8">
+      <header className="fixed z-20 top-0 w-full flex justify-center pt-8">
         <article className={`
           flex items-center justify-between gap-4
-          bg-[#FFFFFF20] p-4 px-8 rounded-full 
+          bg-[#383653] p-4 px-8 rounded-full 
           backdrop-blur-[10rem] shadow-xl
           xs:w-[95%] xs:p-2 xs:px-2 xs:justify-center
           sm:justify-between sm:px-6 sm:w-fit
@@ -30,10 +30,10 @@ export function Header() {
                 <a href="#skills" className="xs:text-[.85rem] sm:text-[.9rem] md:text-[1.15rem] font-Darker text-xl text-header-text font-medium">Habilidades</a>
               </li>
               <li>
-                <a href="#skills" className="xs:text-[.85rem] sm:text-[.9rem] md:text-[1.15rem] font-Darker text-xl text-header-text font-medium">Sobre mí</a>
+                <a href="#about" className="xs:text-[.85rem] sm:text-[.9rem] md:text-[1.15rem] font-Darker text-xl text-header-text font-medium">Sobre mí</a>
               </li>
               <li>
-                <a href="#contact" className="xs:text-[.85rem] sm:text-[.9rem] md:text-[1.15rem] font-Darker text-xl text-header-text font-medium">Contactame</a>
+                <a href="mailto:refh4ck.dev@gmail.com" className="xs:text-[.85rem] sm:text-[.9rem] md:text-[1.15rem] font-Darker text-xl text-header-text font-medium">Contactame</a>
               </li>
             </ul>
           </nav>
