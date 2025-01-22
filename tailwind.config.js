@@ -4,11 +4,13 @@ export default {
   theme: {
     extend: {
       backgroundImage: {
-        "main-gradient": "linear-gradient(to top, #1a1733 0%, #211C45 25%, #211C45 85%, #1a1733 100%)",
-        "overlay-1": "linear-gradient(to bottom, #160F2400 0%, #160F2460 34%, #160F2490 100%)",
+        "main-gradient":
+          "linear-gradient(to top, #1a1733 0%, #211C45 25%, #211C45 85%, #1a1733 100%)",
+        "overlay-1":
+          "linear-gradient(to bottom, #160F2400 0%, #160F2460 34%, #160F2490 100%)",
         "overlay-2": "linear-gradient(to bottom, #160F2410 50%, #160F24 95%)",
-        "mask": "url('assets/images/mask.webp'), linear-gradient(to top, #1a1733 0%, #211C45 25%, #211C45 85%, #1a1733 100%)",
-        "programmer": "url('assets/images/pc.gif')"
+        mask: "url('assets/images/mask.webp'), linear-gradient(to top, #1a1733 0%, #211C45 25%, #211C45 85%, #1a1733 100%)",
+        programmer: "url('assets/images/pc.gif')",
       },
       backgroundColor: {
         main: "#FFFFFF10",
@@ -39,20 +41,17 @@ export default {
           100: "#1a1733",
           200: "#211C45",
         },
-
       },
       screens: {
+        // Breakpoints personalizados
+        xsm: "360px", // Extra small screens
+        xs: "425px", // Extra small screens
         // Breakpoints predeterminados de Tailwind
         sm: "500px", // Small screens
         md: "720px", // Medium screens
         lg: "1024px", // Large screens
         xl: "1280px", // Extra large screens
-        "2xl": "1536px", // 2XL screens
-
-        // Breakpoints personalizados
-        xs: "425px", // Extra small screens
-        "3xl": "1600px", // Extra large screens
-        "4k": "2560px", // 4K resolution
+        '2xl': "1500px", // Extra large screens
       },
     },
   },

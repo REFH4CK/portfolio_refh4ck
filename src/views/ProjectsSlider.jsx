@@ -3,8 +3,8 @@ import { Slider } from "@/components/Slider";
 export function ProjectsSlider() {
   return (
     <>
-      <section className="flex flex-col items-center w-full h-[100dvh] pt-[8.5rem] max-w-[2100px] mx-auto">
-        <h1 className="text-white text-3xl font-Jura uppercase">Proyectos</h1>
+      <section className="flex flex-col justify-center items-center w-full xsm:h-fit lg:h-[100dvh] max-w-[1366px] mx-auto xsm:pt-28 lg:xsm:pt-0">
+        <h1 className="text-white text-3xl font-Jura uppercase font-semibold">Proyectos</h1>
         <Slider />
       </section>
     </>

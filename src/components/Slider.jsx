@@ -28,18 +28,19 @@ export function Slider() {
 
   return (
     <>
-      <article className="w-full h-[40rem] mt-6">
-        <div className="relative w-[60%] h-[100%] mx-auto rounded-3xl select-none">
+
+      <article className="w-full h-[30rem] mt-4">
+        <div className="xsm:w-[95%] xsm:h-[60%] relative w-[60rem] xl:w-[60rem]  lg:h-[100%] mx-auto rounded-3xl select-none">
           <article className="relative left-0 flex justify-between items-center w-full h-full">
             <span
               onClick={() => handleImageSlider("back", project - 1)}
-              className="flex justify-center cursor-pointer items-center w-6 h-8 bg-caret absolute -left-8 rounded-md"
+              className="flex justify-center cursor-pointer items-center w-6 h-8 bg-caret absolute xsm:left-1 lg:-left-8 rounded-md xsm:z-20 lg:z-0"
             >
               <ion-icon name="caret-back-outline"></ion-icon>
             </span>
             <span
               onClick={() => handleImageSlider("forward", project + 1)}
-              className="flex justify-center cursor-pointer items-center w-6 h-8 bg-caret absolute -right-8 rounded-md"
+              className="flex justify-center cursor-pointer items-center w-6 h-8 bg-caret absolute xsm:right-1 lg:-right-8 rounded-md xsm:z-20 lg:z-0"
             >
               <ion-icon name="caret-forward-outline"></ion-icon>
             </span>
@@ -70,8 +71,8 @@ export function Slider() {
           </div>
         </div>
         <div className="relative w-[85%] mx-auto flex justify-center">
-          <span className="absolute -bottom-12 z-7 w-[62%] h-[4rem] rounded-3xl bg-stack shadow-[#00000040] shadow-lg"></span>
-          <span className="absolute -bottom-6 z-8  w-[67%] h-[4rem] rounded-3xl bg-stack shadow-[#00000040] shadow-lg"></span>
+          <span className="absolute -bottom-12 z-7 xsm:w-[85%] lg:w-[52rem] xl:w-[52rem] h-[4rem] rounded-3xl bg-stack shadow-[#00000040] shadow-lg"></span>
+          <span className="absolute -bottom-6 z-8  xsm:w-[97%] lg:w-[55rem] xl:w-[55rem] h-[4rem] rounded-3xl bg-stack shadow-[#00000040] shadow-lg"></span>
         </div>
       </article>
     </>

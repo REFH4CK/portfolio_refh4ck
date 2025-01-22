@@ -11,23 +11,23 @@ export function App() {
         <Header />
         <section
           id="projects"
-          className="flex flex-col items-center w-full h-[100dvh] "
+          className="flex flex-col items-center w-full xsm:h-fit lg:h-[100dvh] "
         >
           <ProjectsSlider />
         </section>
         <section
           id="skills"
-          className="flex flex-col items-center w-full h-[100dvh] "
+          className="flex flex-col items-center w-full xsm:h-fit lg:h-[100dvh] pt-6"
         >
           <Skills />
         </section>
         <section
           id="about"
-          className="flex flex-col items-center w-full h-[100dvh] "
+          className="flex flex-col items-center w-full h-[100dvh]"
         >
           <AboutMe />
+          <Footer />
         </section>
-        <Footer />
       </main>
     </>
   );

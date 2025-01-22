@@ -13,7 +13,6 @@ main {
   overflow-y: scroll;
   overflow-x: hidden;
   scroll-behavior: smooth;
-  scroll-padding-top: 1.25rem;
 }
 
 ion-icon {

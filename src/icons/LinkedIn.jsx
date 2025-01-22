@@ -2,7 +2,7 @@ export function LinkedIn() {
   return (
     <>
       <svg
-        className="xs:w-[15px] h-auto md:w-[24px]"
+        className="xsm:w-[12px] xs:w-[15px] h-auto md:w-[24px]"
         width="24"
         height="24"
         viewBox="0 0 24 24"

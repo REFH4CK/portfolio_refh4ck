@@ -2,7 +2,7 @@ export function Logo() {
   return (
     <>
       <svg
-        className="xs:w-[15px] sm:w-[20px] md:w-[25px] h-auto"
+        className="xsm:w-[13px] xs:w-[15px] sm:w-[20px] md:w-[25px] h-auto"
         width="30"
         height="35"
         viewBox="0 0 43 49"
