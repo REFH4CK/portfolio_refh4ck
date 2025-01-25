@@ -8,7 +8,7 @@
   },
   {
     "name": "Pixels Missions",
-    "description": "El sitio web de Pixels Online proporciona a los usuarios información sobre las misiones y la reputación que otorga cada una, y si son misiones que solicitan objetos, se mostrará un cuadro con los objetos requeridos en la lista.",
+    "description": "El sitio web de Pixels Missions proporciona a los usuarios información sobre las misiones y la reputación que otorga cada una, y si son misiones que solicitan objetos, se mostrará un cuadro con los objetos requeridos en la lista.",
     "technologies": ["react", "css"],
     "img": "missions",
     "url": "https://pixels-missions.vercel.app/"
