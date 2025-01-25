@@ -8,7 +8,7 @@
 @tailwind utilities;
 
 main {
-  scrollbar-color: #0000007c #06043d7c;
+  scrollbar-color: #0000007c transparent;
   scrollbar-width: thin;
   overflow-y: scroll;
   overflow-x: hidden;
@@ -17,4 +17,12 @@ main {
 
 ion-icon {
   color: #06043D70
+}
+
+#project-card {
+  scrollbar-color: #0000007c transparent;
+  scrollbar-width: thin;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
 }

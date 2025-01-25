@@ -3,8 +3,13 @@ import bitmates from "@/assets/images/projects/bitmates.png";
 import pmissions from "@/assets/images/projects/pmissions.png";
 import tracker from "@/assets/images/projects/tracker.png";
 import { Link } from "@/icons/Link";
+
 import { ReactLogo } from "@/icons/Competencies/ReactLogo"
+import { NodeLogo } from "@/icons/Competencies/NodeLogo"
 import { HtmlLogo } from "@/icons/Competencies/HtmlLogo"
+import { JavaScriptLogo } from "@/icons/Competencies/JavaScriptLogo"
+import { CssLogo } from "@/icons/Competencies/CssLogo"
+import { TailwindLogo } from "@/icons/Competencies/TailwindLogo"
 import { ExpressLogo } from "@/icons/Competencies/ExpressLogo"
 
 import { useState } from "react";
@@ -13,12 +18,12 @@ export function Slider() {
   const projectsImgs = [bitmates, pmissions, tracker];
   const techs = {
     react: <ReactLogo />,
-    node: <ReactLogo />,
-    html: <ReactLogo />,
-    javascript: <ReactLogo />,
-    css: <ReactLogo />,
-    tailwind: <ReactLogo />,
-    express: <ReactLogo />,
+    node: <NodeLogo />,
+    html: <HtmlLogo />,
+    javascript: <JavaScriptLogo />,
+    css: <CssLogo />,
+    tailwind: <TailwindLogo />,
+    express: <ExpressLogo />,
   }
 
   const [project, setProject] = useState(0);
@@ -67,23 +72,26 @@ export function Slider() {
             role="overlay"
           ></div>
           <div
-            className="absolute bottom-0 left-0 z-10 size-[100%] bg-overlay-2 rounded-[1.4rem] flex justify-center items-end p-2"
+            className="absolute bottom-0 left-0 z-10 size-[100%] bg-overlay-2 rounded-[1.4rem] flex justify-center items-end pb-4"
             role="overlay"
           >
-            <article className="text-white bg-[#282543] w-[35rem] xsm:p-2 lg:p-4 rounded-[1rem]">
+            <article id="project-card" className="text-white bg-[#282543] xsm:h-[10rem] xsm:w-[40rem] lg:h-[11rem] w-[35rem] xsm:p-4 rounded-[1rem] overflow-auto">
               <div>
-                <div className="flex justify-between items-center p-2">
+                <div className="flex justify-between items-center py-2">
                   <a
+                    target="_blank"
                     className="uppercase font-Jaro flex items-center gap-1 text-[#928BFE] underline underline-offset-4 xsm:text-2xl lg:text-3xl" 
                     href={projects[project].url}
                   >
                     <Link /> {projects[project].name}
                   </a>
-                  <span className="p-2 flex gap-2">
-                    {projects[project].technologies}
+                  <span className="p-2 flex gap-2 bg-[#FFFFFF15] rounded-lg">
+                    {projects[project].technologies.map((tech, index) => (
+                      <span key={index} title={tech}>{techs[tech]}</span>
+                    ))}
                   </span>
                 </div>
-                <p>{projects[project].description}</p>
+                <p className="text-sm">{projects[project].description}</p>
               </div>
             </article>
           </div>
