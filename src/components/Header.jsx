@@ -65,9 +65,27 @@ export function Header() {
             role="splitter"
           ></span>
           <div className="xsm:flex xsm:gap-1 xs:gap-3">
-            <Github />
-            <Instagram />
-            <LinkedIn />
+            <a
+              className="flex items-center justify-center"
+              href="https://github.com/REFH4CK"
+              target="_blank"
+            >
+              <Github />
+            </a>
+            <a
+              className="flex items-center justify-center"
+              href="https://www.instagram.com/refh4ck/"
+              target="_blank"
+            >
+              <Instagram />
+            </a>
+            <a
+              className="flex items-center justify-center"
+              href="https://www.linkedin.com/in/andres-hr/"
+              target="_blank"
+            >
+              <LinkedIn />
+            </a>
             <a
               href="https://drive.google.com/file/d/19rfuESKEXynGgNdTrjLyhyFa-_ICWLtu/view?usp=sharing"
               target="_blank"
