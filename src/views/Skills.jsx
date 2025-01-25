@@ -17,13 +17,16 @@ export function Skills() {
             outline-skillsOutline/15 mt-8
           `}
         >
-          <article className="flex flex-col justify-center items-center w-[50%]">
+          <article className="flex flex-col justify-center items-center lg:w-[50%] xsm:h-[26rem] lg:h-auto">
             <div
               className={`
                 bg-programmer 
                 bg-no-repeat w-full h-full
-                bg-[length:650px_670px] 
-                bg-[-2rem_0.5rem] 
+                xsm:bg-[length:680px_680px]
+                xsm:bg-[1rem_-7rem] 
+                xsm:bg-center
+                lg:bg-[length:650px_670px] 
+                lg:bg-[-2rem_0.5rem] 
                 `}
               // bg-[length:785px_750px]
             ></div>

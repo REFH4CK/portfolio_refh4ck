@@ -2,11 +2,24 @@ import projects from "@/data/projects.json";
 import bitmates from "@/assets/images/projects/bitmates.png";
 import pmissions from "@/assets/images/projects/pmissions.png";
 import tracker from "@/assets/images/projects/tracker.png";
+import { Link } from "@/icons/Link";
+import { ReactLogo } from "@/icons/Competencies/ReactLogo"
+import { HtmlLogo } from "@/icons/Competencies/HtmlLogo"
+import { ExpressLogo } from "@/icons/Competencies/ExpressLogo"
 
 import { useState } from "react";
 
 export function Slider() {
   const projectsImgs = [bitmates, pmissions, tracker];
+  const techs = {
+    react: <ReactLogo />,
+    node: <ReactLogo />,
+    html: <ReactLogo />,
+    javascript: <ReactLogo />,
+    css: <ReactLogo />,
+    tailwind: <ReactLogo />,
+    express: <ReactLogo />,
+  }
 
   const [project, setProject] = useState(0);
 
@@ -28,9 +41,8 @@ export function Slider() {
 
   return (
     <>
-
-      <article className="w-full h-[30rem] mt-4">
-        <div className="xsm:w-[95%] xsm:h-[60%] relative w-[60rem] xl:w-[60rem]  lg:h-[100%] mx-auto rounded-3xl select-none">
+      <article className="w-full xsm:h-[30rem] md:h-[45rem] lg:h-[30rem] mt-4">
+        <div className="xsm:w-[95%] xsm:h-[60%] relative w-[60rem] lg:w-[55rem] xl:w-[60rem]  lg:h-[100%] mx-auto rounded-3xl select-none">
           <article className="relative left-0 flex justify-between items-center w-full h-full">
             <span
               onClick={() => handleImageSlider("back", project - 1)}
@@ -55,24 +67,30 @@ export function Slider() {
             role="overlay"
           ></div>
           <div
-            className="absolute bottom-0 left-0 z-10 size-[100%] bg-overlay-2 rounded-[1.4rem] flex justify-center items-end"
+            className="absolute bottom-0 left-0 z-10 size-[100%] bg-overlay-2 rounded-[1.4rem] flex justify-center items-end p-2"
             role="overlay"
           >
-            <article className="text-white">
+            <article className="text-white bg-[#282543] w-[35rem] xsm:p-2 lg:p-4 rounded-[1rem]">
               <div>
-                <h3 className="uppercase font-Jaro">
-                  {projects[project].name}
-                </h3>
-                <div>
-                  
+                <div className="flex justify-between items-center p-2">
+                  <a
+                    className="uppercase font-Jaro flex items-center gap-1 text-[#928BFE] underline underline-offset-4 xsm:text-2xl lg:text-3xl" 
+                    href={projects[project].url}
+                  >
+                    <Link /> {projects[project].name}
+                  </a>
+                  <span className="p-2 flex gap-2">
+                    {projects[project].technologies}
+                  </span>
                 </div>
+                <p>{projects[project].description}</p>
               </div>
             </article>
           </div>
         </div>
         <div className="relative w-[85%] mx-auto flex justify-center">
-          <span className="absolute -bottom-12 z-7 xsm:w-[85%] lg:w-[52rem] xl:w-[52rem] h-[4rem] rounded-3xl bg-stack shadow-[#00000040] shadow-lg"></span>
-          <span className="absolute -bottom-6 z-8  xsm:w-[97%] lg:w-[55rem] xl:w-[55rem] h-[4rem] rounded-3xl bg-stack shadow-[#00000040] shadow-lg"></span>
+          <span className="absolute -bottom-12 z-7 xsm:w-[85%] lg:w-[50rem] xl:w-[52rem] h-[4rem] rounded-3xl bg-stack shadow-[#00000040] shadow-lg"></span>
+          <span className="absolute -bottom-6 z-8  xsm:w-[97%] lg:w-[52rem] xl:w-[55rem] h-[4rem] rounded-3xl bg-stack shadow-[#00000040] shadow-lg"></span>
         </div>
       </article>
     </>

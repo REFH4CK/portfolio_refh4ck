@@ -8,7 +8,11 @@ export function AboutMe() {
           Sobre mí
         </h1>
         <section className="xsm:w-[95%] xsm:flex-col relative flex lg:flex-row gap-6 lg:w-[60rem] p-6 bg-slate-900/85 mt-8 rounded-2xl shadow-xl">
-          <img src={photo} className="w-[20rem]" alt="Andres Hernadez Foto" />
+          <img
+            src={photo}
+            className="w-[20rem] xsm:self-center "
+            alt="Andres Hernadez Foto"
+          />
           <div className="flex flex-col gap-4">
             <p className="pt-4 w-full text-pretty text-white/60 font-sans font-light">
               Mi nombre es{" "}
@@ -25,12 +29,21 @@ export function AboutMe() {
               a explorar, aprender y crecer continuamente en este apasionante
               campo.
             </p>
-            <a
-              href="mailto:refh4ck.dev@gmail.com"
-              className="p-2 rounded-full text-white/80 outline outline-[#0acf8395] text-sm bg-white/5 text-center shadow-[#0acf8325] shadow-lg hover:bg-white/20 transition-colors"
-            >
-              Disponible para trabajar
-            </a>
+            <div className="flex gap-4 xsm:justify-center lg:justify-start">
+              <a
+                href="mailto:refh4ck.dev@gmail.com"
+                className="flex justify-center items-center p-2 rounded-full text-white/80 outline outline-[#0acf8395] text-sm bg-white/5 text-center shadow-[#0acf8325] shadow-lg hover:bg-white/20 transition-colors"
+              >
+                Disponible para trabajar
+              </a>
+              <a
+                href="https://drive.google.com/file/d/19rfuESKEXynGgNdTrjLyhyFa-_ICWLtu/view?usp=sharing"
+                target="_blank"
+                className="p-2 w-24 flex justify-center items-center rounded-full text-white/80 outline outline-[#0acf8395] text-sm bg-white/5 text-center shadow-[#0acf8325] shadow-lg hover:bg-white/20 transition-colors"
+              >
+                CV
+              </a>
+            </div>
           </div>
         </section>
       </article>
