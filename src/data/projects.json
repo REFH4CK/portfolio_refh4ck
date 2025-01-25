@@ -1,0 +1,23 @@
+[
+  {
+    "name": "Bitmates Info",
+    "description": "Bitmates Info es una herramienta web diseñada para apoyar a la comunidad de un juego NFT, ofreciendo recursos valiosos tanto para jugadores nuevos como experimentados. La plataforma permite buscar jugadores, explorar los Bitmates NFTs con sus atributos y rarezas, y acceder a información esencial de manera intuitiva.",
+    "technologies": ["react", "node", "express", "javascript", "css"],
+    "img": "bitmates",
+    "url": "https://bitmates-info.vercel.app/"
+  },
+  {
+    "name": "Pixels Missions",
+    "description": "El sitio web de Pixels Online proporciona a los usuarios información sobre las misiones y la reputación que otorga cada una, y si son misiones que solicitan objetos, se mostrará un cuadro con los objetos requeridos en la lista.",
+    "technologies": ["react", "css"],
+    "img": "missions",
+    "url": "https://pixels-missions.vercel.app/"
+  },
+  {
+    "name": "Pixels - Land Tracker",
+    "description": "Herramienta para rastrear tierras del juego WEB3 Pixels Online. Desarrollada con HTML, CSS y JavaScript (Vanilla). Ayuda a los jugadores a poder consultar o hacer tiradas aleatorias entre las 5000 tierras del juego.",
+    "technologies": ["html", "css", "javascript"],
+    "img": "tracker",
+    "url": "https://refh4ck.github.io/pixels_land_tracker/"
+  }
+]

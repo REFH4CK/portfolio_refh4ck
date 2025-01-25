@@ -1,31 +1,34 @@
-import "./App.css";
-import Header from "./components/Header";
-import NavBar from "./NavBar";
-import AboutMe from "./AboutMe";
-import TechBoard from "./components/TechBoard";
-import ProjectCard from "./components/ProjectCard";
+import { Header } from "@/components/Header";
+import { ProjectsSlider } from "@/views/ProjectsSlider";
+import { Skills } from "@/views/Skills";
+import { AboutMe } from "@/views/AboutMe";
+import { Footer } from "@/components/Footer";
 
-
-
-function App() {
+export function App() {
   return (
     <>
-      <Header />
-      <main className="container">
-        <NavBar />
-        <section className="container-info" id="about">
-          <AboutMe />
+      <main className="relative w-[100dvw] h-[100dvh] overflow-x-hidden bg-mask bg-center bg-contain">
+        <Header />
+        <section
+          id="projects"
+          className="flex flex-col items-center w-full xsm:h-fit lg:h-[100dvh] "
+        >
+          <ProjectsSlider />
         </section>
-        <section className="container-technologies" id="technologies">
-          <TechBoard />
-        </section>            
-        <section className="container-projects" id="projects">
-          <h2 className='container-projects-title'>Featured projects</h2>
-          <ProjectCard />
+        <section
+          id="skills"
+          className="flex flex-col items-center w-full xsm:h-fit lg:h-[100dvh] pt-6"
+        >
+          <Skills />
+        </section>
+        <section
+          id="about"
+          className="flex flex-col items-center w-full h-[100dvh]"
+        >
+          <AboutMe />
+          <Footer />
         </section>
       </main>
     </>
   );
 }
-
-export default App;
